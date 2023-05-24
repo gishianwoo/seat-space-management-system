@@ -127,8 +127,8 @@ header {
 }
 
 nav.navbar {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.53);
-    background: rgba(6, 6, 6, 0.05);
+    border-bottom: 2px solid /*#341211*/rgba(255, 255, 255, 0.53);
+    background: #e8b9b1/*rgba(6, 6, 6, 0.95)*/;
 }
 
 /* logo */
@@ -141,7 +141,7 @@ a.logo i {
 
 .navbar-light .navbar-brand,
 a.logo {
-    color: #fff;
+    color: #2c1712;
     padding: 0;
     font-weight: 700;
     font-size: 35px;
@@ -151,11 +151,11 @@ a.logo {
 /* navigation */
 .navbar-light .navbar-brand:hover,
 .navbar-light .navbar-brand:focus {
-    color: #fff;
+    color: #2c1712;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+    color: #2c1712;
     letter-spacing: 2px;
     font-size: 15px;
     padding: 0.5em 0;
@@ -185,12 +185,12 @@ li.login-list-w3ls.d-inline a {
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #fff;
+    color: #2c1712;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
-    color: #fff;
+    color: #2c1712;
     opacity: .7;
 }
 
@@ -737,8 +737,9 @@ a.button-w3ls:hover {
 }
 
 footer {
-    background: url(../images/bg5.jpg) no-repeat center fixed;
-    background-size: cover;
+    /*background: url(../images/bg5.jpg) no-repeat center fixed;
+    background-size: cover;*/
+    background-color: #232c3d;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -754,9 +755,11 @@ footer {
 .footer-grid ul li a,
 .footer-grid ul li {
     color: #eee;
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 1px;
 }
+
+.footer-grid ul li span{margin-left: 25px;}
 
 .copy_right p a {
     color: #ed4f4f;
@@ -835,7 +838,7 @@ footer {
 /*-- //contact --*/
 /*-- gallery --*/
 div#gallery {
-    background: #fff;
+    background: #d4cbbc;
 }
 
 .gallery_grids {

@@ -594,7 +594,7 @@ pre code {
 }
 
 .row {
-  display: -webkit-box;
+  /**/display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -8817,6 +8817,10 @@ button.bg-dark:focus {
 
 .font-italic {
   font-style: italic !important;
+}
+
+.text-brown {
+  color: #2c1712 !important;
 }
 
 .text-white {
