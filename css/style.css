@@ -1019,11 +1019,11 @@ a.sb {
     button.navbar-toggler {
         background: #fff;
         border-radius: 0px;
-        border-color: #fff;
+        border-color: rgb(255, 255, 255);
     }
 
     div#navbarSupportedContent {
-        background: rgba(0, 0, 0, 0.91);
+        background: rgba(255, 255, 255, 0.5)/*rgba(0, 0, 0, 0.91)*/;
         padding: 1.5em 1em;
     }
 
