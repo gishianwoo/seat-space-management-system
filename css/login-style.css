@@ -325,7 +325,9 @@ h1 span {
     border-radius: 8px;
 }
 
-.sub-main-w3 input[type="submit"] {
+.sub-main-w3 input[type="submit"],
+.sub-main-w3 input[type="button"]
+{
     color: #fff;
     background: #f76b53;
     border: none;
@@ -345,7 +347,13 @@ h1 span {
     box-shadow: 2px 4px 13px 1px rgba(0, 0, 0, 0.42);
 }
 
-.sub-main-w3 input[type="submit"]:hover {
+.sub-main-w3 input[type="button"]{
+    margin-left: 20px;
+}
+
+.sub-main-w3 input[type="submit"]:hover,
+.sub-main-w3 input[type="button"]:hover
+{
     opacity:.7;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
