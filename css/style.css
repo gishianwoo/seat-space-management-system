@@ -128,10 +128,19 @@ header {
 
 nav.navbar {
     border-bottom: 2px solid /*#341211*/rgba(255, 255, 255, 0.53);
-    background: #e8b9b1/*rgba(6, 6, 6, 0.95)*/;
+    background: #e7b9b0/*rgba(6, 6, 6, 0.95)*/;
 }
 
 /* logo */
+.lib-logo{
+    background: url(/images/lib-logo.png)no-repeat;
+    background-size: contain;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin:0 10px -6px 0px;
+}
+
+
 a.navbar-brand i,
 a.logo i {
     font-size: 35px;
@@ -149,6 +158,13 @@ a.logo {
 
 /* //logo */
 /* navigation */
+.navbar-brand-EN{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.53rem;
+    /*border: 1px solid beige;*/
+}
+
 .navbar-light .navbar-brand:hover,
 .navbar-light .navbar-brand:focus {
     color: #2c1712;
@@ -157,7 +173,7 @@ a.logo {
 .navbar-light .navbar-nav .nav-link {
     color: #2c1712;
     letter-spacing: 2px;
-    font-size: 15px;
+    font-size: 17px;
     padding: 0.5em 0;
 }
 
@@ -739,7 +755,7 @@ a.button-w3ls:hover {
 footer {
     /*background: url(../images/bg5.jpg) no-repeat center fixed;
     background-size: cover;*/
-    background-color: #232c3d;
+    background-color: #212c3d;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -838,7 +854,7 @@ footer {
 /*-- //contact --*/
 /*-- gallery --*/
 div#gallery {
-    background: #d4cbbc;
+    background: #d4cbbb;
 }
 
 .gallery_grids {
