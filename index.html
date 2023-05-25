@@ -42,7 +42,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext"
 	    rel="stylesheet">
 	<!-- //Web-Fonts -->
-
+	<!-- icon -->
+	<link href="images/favicon.ico" rel="shortcut icon"/>
+	<!-- //icon -->
 </head>
 
 <body>
@@ -50,9 +52,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light py-4">
 			<div class="container">
-				<h1>
-					<a class="navbar-brand" href="index.html">
-						<!--i class="fas fa-utensils"/i-->國立台南大學圖書館｜府城校區
+				<h1 style="line-height: 25px;margin:0px 0 -10px;">
+					<a class="navbar-brand" href="index.html" style="font-size: 30px;">
+						<!--i class="fas fa-utensils"></i-->
+						<div class="lib-logo d-inline-block"></div>
+						<div class="d-inline-block">國立台南大學圖書館｜府城校區<br/>
+							<span class="navbar-brand-EN">University of Tainan Library
+							</span>
+						</div>
 					</a>
 				</h1>
 				<button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -61,42 +68,55 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-
 					<ul class="navbar-nav mx-auto text-center">
 						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Home
+							<a class="nav-link" href="index.html">公告
 								<span class="sr-only">(current)</span>
 							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link scroll" href="#about">About</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
 							    aria-haspopup="true" aria-expanded="false">
-								Pages
+								座位/空間
 							</a>
 							<div class="dropdown-menu text-lg-left text-center" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item scroll" href="#services">Services</a>
-								<a class="dropdown-item scroll" href="#specials">Specials</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item scroll" href="#gallery">Gallery</a>
+								<a class="dropdown-item" href="#services">查詢</a>
+								<a class="dropdown-item" href="#specials">預約</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+							    aria-haspopup="true" aria-expanded="false">
+								個人紀錄
+							</a>
+							<div class="dropdown-menu text-lg-left text-center" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#services">預約紀錄</a>
+								<a class="dropdown-item" href="#specials">違規紀錄</a>
 							</div>
 						</li>
 
-						<li class="nav-item">
-							<a class="nav-link scroll" href="#contact">Contact Us</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+							    aria-haspopup="true" aria-expanded="false">
+								本校網站
+							</a>
+							<div class="dropdown-menu text-lg-left text-center" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="https://www.nutn.edu.tw/index-ch.html" target="_blank">
+									南大首頁</a>
+								<a class="dropdown-item" href="https://lib.nutn.edu.tw/" target="_blank">
+									南大圖書館</a>
+								<a class="dropdown-item" href="https://campus.nutn.edu.tw/ActReg/" target="_blank">
+									活動報名系統</a>
+							</div>
 						</li>
 					</ul>
-					<div class="forms-w3ls-agilesm text-center mt-lg-0 mt-4">
-						<ul>
-							<li class="login-list-w3ls d-inline  pr-3 mr-3">
-								<a href="login.html" class="text-brown" >Login</a>
-							</li><!--
-							<li class="login-list-w3ls d-inline">
-								<a href="#" class="text-white" data-toggle="modal" data-target="#exampleModalCenter2">Register</a>
-							</li>-->
-						</ul>
+					<ul style="margin-right:-15px;">
+						<li class="login-list-w3ls d-inline" style="padding-left: 2rem;font-weight: 510;">
+							<a href="login.html" class="text-brown" >Login</a>
+						</li>
+					</ul>
+					<div class="forms-w3ls-agilesm mt-lg-0 mt-4">
+						
 					</div>
 				</div>
 			</div>
@@ -471,10 +491,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!--//contact-->
 
 	<!-- footer -->
+	<!-- style="border: 1px solid peru;" style="border: 1px solid blueviolet;" style="border: 1px solid red;" style="border: 1px solid red;"-->
 	<footer class="pt-5">
 		<div class="container py-xl-5 py-lg-3">
-			<div class="row footer-grids py-4">
-				<div class="col-lg-4 footer-grid text-left">
+			<div class="footer-row footer-grids py-4">
+				<div class="col-lg-4 footer-grid text-center">
 					<div class="footer-logo">
 						<h2 class="mb-3">
 							<a class="logo text-white" href="index.html">
