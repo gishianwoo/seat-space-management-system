@@ -133,10 +133,11 @@ nav.navbar {
 
 /* logo */
 .lib-logo{
-    background: url(/images/lib-logo.png)no-repeat;
+    background-image: url("../images/lib-logo.png");
+    background-repeat: no-repeat;
     background-size: contain;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.5rem;/*3.5rem*/
+    height: 3.5rem;/*3.5rem*/
     margin:0 10px -6px 0px;
 }
 
@@ -753,13 +754,7 @@ a.button-w3ls:hover {
 }
 
 footer {
-    /*background: url(../images/bg5.jpg) no-repeat center fixed;
-    background-size: cover;*/
     background-color: #212c3d;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
 }
 
 .footer-grid h3 {
