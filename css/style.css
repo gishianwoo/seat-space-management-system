@@ -133,14 +133,20 @@ nav.navbar {
 
 /* logo */
 .lib-logo{
-    background-image: url("../images/lib-logo.png");
-    background-repeat: no-repeat;
+    background: url("../images/lib-logo.png") no-repeat;
     background-size: contain;
     width: 3.5rem;/*3.5rem*/
     height: 3.5rem;/*3.5rem*/
     margin:0 10px -6px 0px;
 }
 
+.nutn-logo{
+    background: url("../images/nutn-logo.png") no-repeat;
+    background-size: contain;
+    width: 3.5rem;/*3.5rem*/
+    height: 3.5rem;/*3.5rem*/
+    margin:0px 0px -13px 0px;
+}
 
 a.navbar-brand i,
 a.logo i {
