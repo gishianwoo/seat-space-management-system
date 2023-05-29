@@ -199,10 +199,19 @@ li.nav-item {
     margin: 0 1em;
 }
 
+.login{
+    background: url("../images/IMG_0663.PNG") no-repeat;
+    background-size: contain;
+    width: 4.1rem;/*3.5rem*/
+    height: 4.1rem;/*3.5rem*/
+    margin:-10px 0px;
+    /*border: 1px solid red;*/
+}
+/*
 li.login-list-w3ls.d-inline a {
     letter-spacing: 2px;
     font-size: 15px;
-}
+}*/
 
 .navbar-light .navbar-nav .show>.nav-link,
 .navbar-light .navbar-nav .active>.nav-link,
