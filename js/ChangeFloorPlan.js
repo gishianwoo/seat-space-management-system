@@ -8,23 +8,23 @@ var seats = [,f1,f2,f3,f4,f5]
 function ChangeFloorPlan(Floor){
     switch(Floor){
         case 1:
-            document.getElementById("floor").src = "../images/1F.jpg";
+            document.getElementById("floor").src = "images/1F.jpg";
             nowFloor = 1;
             break
         case 2:
-            document.getElementById("floor").src = "../images/2F.jpg";
+            document.getElementById("floor").src = "images/2F.jpg";
             nowFloor = 2;
             break
         case 3:
-            document.getElementById("floor").src = "../images/3F.jpg";
+            document.getElementById("floor").src = "images/3F.jpg";
             nowFloor = 3;
             break
         case 4:
-            document.getElementById("floor").src = "../images/4F.jpg";
+            document.getElementById("floor").src = "images/4F.jpg";
             nowFloor = 4;
             break
         case 5:
-            document.getElementById("floor").src = "../images/5F.jpg";
+            document.getElementById("floor").src = "images/5F.jpg";
             nowFloor = 5;
             break
     }
