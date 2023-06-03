@@ -334,14 +334,25 @@ a.sb {
 
 
 /*-- 預約 --*/
+.area{background: #d4cbbb;}
+.area #h2{
+    margin: 0 auto;
+    padding: 40px;
+    padding-left: 85px;
+    /*border: 1px solid blue;*/
+}
+.area #h2 h2{
+    font-weight: bold;
+    padding: 5px 15px;
+    border-left: 5px solid #2a1715;
+}
+
 #reserve{
     display: flex;
     flex-direction: row; /*橫向排列*/
     justify-content: space-around; /*水平置中，前、後、間隔都有留空白*/
     align-items: center; /*垂直置中*/
-    background: #d4cbbb;
-    padding: 60px;
-    border: 1px solid red;
+    padding: 60px 60px;
 }
 /*平面圖*/
 #floor-plan{
@@ -353,17 +364,24 @@ a.sb {
     border: 2px solid #2a1715;
 }
 /*預約詳情*/
-#reserve-infor{
+#reserve-info{
     width: 30%;
     /*border: 1px solid red;*/
 }
 form{
-    font-size: 1.2rem;
+    font-size: 1.2em;
     /*border: 1px solid red;*/
 }
 form > div{
-    margin:0 auto 25px;
+    margin:0 auto 35px;
     /*border: 1px solid green;*/
+}
+/*標題*/
+form h2{
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 10px;
+    border-left: 5px solid #2a1715;/**/
 }
 /*樓層選擇*/
 #floor label{
@@ -373,12 +391,30 @@ form > div{
 input[type=date],input[type=time],select{
     border-radius: 3px;
 }
+#time-list{
+    padding-bottom: 50px;
+}
+select[name="start-time"],select[name="end-time"]{
+    margin-bottom: -50px;
+}
 /*按鈕*/
-input[type=submit]{
+input[type=button]{
     border-radius: 3px;
     font-size: 0.85em;
 }
 /*座位狀態*/
+/**/
+#seats-area{
+    display: flex;
+    /*border: 1px solid red;*/
+}
+#seats-list{
+    padding-bottom: 30px;
+    /*border: 1px solid green;*/
+}
+select[name="seats"]{
+    margin-bottom: -30px;
+}
 option{background-color: #788a7e;}
 option[value="1-03"]{
     background-color: #e2d27d;
@@ -388,8 +424,11 @@ option[value="4-14"]{
 }
 /*座位狀態說明*/
 #direction{
-    font-size: 0.6em;
+    font-size: 0.7em;
     letter-spacing: 1.5px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
 }
 /**/
 /*-- //預約 --*/
