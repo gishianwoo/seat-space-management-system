@@ -80,19 +80,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								座位/空間
 							</a>
 							<div class="dropdown-menu text-lg-left text-center" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#services">查詢</a>
-								<a class="dropdown-item" href="#specials">預約</a>
+								<a class="dropdown-item" href="state.html">目前狀態</a>
+								<a class="dropdown-item" href="reserve.html">預約</a>
 							</div>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-							    aria-haspopup="true" aria-expanded="false">
-								個人紀錄
-							</a>
-							<div class="dropdown-menu text-lg-left text-center" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#services">預約紀錄</a>
-								<a class="dropdown-item" href="#specials">違規紀錄</a>
-							</div>
+						<li class="nav-item">
+							<a class="nav-link" href="record.html">個人紀錄</a>
 						</li>
 
 						<li class="nav-item dropdown">
@@ -244,7 +237,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							榮譽分館：<a href="tel:+886-6-2601672">06-2601672</a>
 						</li>
 						<li class="mt-2">
-							信箱：<a href="mailto:lib-1@pubmail.nuts.edu.tw">lib-1@pubmail.nuts.edu.tw</a>
+							信箱：<a href="mailto:lib-1@pubmail.nuts.edu.tw">lib-1@pubmail.nutn.edu.tw</a>
 						</li>
 					</ul>
 				</div>
@@ -267,52 +260,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<!-- Default-JavaScript-File -->
 
-	<!-- banner slider -->
-	<script src="js/responsiveslides.min.js"></script>
-	<script>
-		// You can also use "$(window).load(function() {"
-		$(function () {
-			// Slideshow 4
-			$("#slider3").responsiveSlides({
-				auto: true,
-				pager: true,
-				nav: false,
-				speed: 500,
-				namespace: "callbacks",
-				before: function () {
-					$('.events').append("<li>before event fired.</li>");
-				},
-				after: function () {
-					$('.events').append("<li>after event fired.</li>");
-				}
-			});
-
-		});
-	</script>
-	<!-- //banner slider -->
-
-	<!-- password-script -->
-	<!--<script>
-		window.onload = function () {
-			document.getElementById("password1").onchange = validatePassword;
-			document.getElementById("password2").onchange = validatePassword;
-		}
-
-		function validatePassword() {
-			var pass2 = document.getElementById("password2").value;
-			var pass1 = document.getElementById("password1").value;
-			if (pass1 != pass2)
-				document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-			else
-				document.getElementById("password2").setCustomValidity('');
-			//empty string means no validation error
-		}
-	</script>-->
-	<!-- //password-script -->
-
 	<!-- gallery light box -->
 	<script src="js/smoothbox.jquery2.js"></script>
 	<!-- //gallery light box -->
+
+	<!-- 平面圖切換 -->
+	<script src="js/ChangeFloorPlan.js"></script>
+	<!-- 平面圖切換 -->
 
 	<!-- smooth scrolling -->
 	<script src="js/SmoothScroll.min.js"></script>

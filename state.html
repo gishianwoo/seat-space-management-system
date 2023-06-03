@@ -120,14 +120,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 	<!-- 預約 -->
 	<div class="area">
-		<!--div id="h2"><h2>預約</h2></div-->
+		<!--div id="h2"><h2>目前狀態</h2></div-->
 		<div id="reserve">
 			<div id="floor-plan">
 				<img id="floor" src="images/1F.jpg" alt="">
 			</div>
-			<div id="reserve-info">
+			<div id="reserve-infor">
 				<form>
-					<div><h2>預約</h2></div>
+					<div><h2>目前狀態</h2></div>
 					<div id="floor">樓層：
 						<label><input onclick="ChangeFloorPlan(1), Seats()" type="radio" name="floor" value="1" checked/> 1</label>
 						<label><input onclick="ChangeFloorPlan(2), Seats()" type="radio" name="floor" value="2"/> 2</label>
@@ -155,84 +155,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							紅色:已預約）</div><br>
 						</div>
 					</div>
-					<div>
-						<label>日期：
-						<input type="date" name="date" min="2023-06-15" max="2023-07-15">
-						</label>
-					</div>
-					<div>時間：
-						<label id="time-list">從
-							<select name="start-time" size="5">
-								<option value="8:00">8:00</option>
-								<option value="8:30">8:30</option>
-								<option value="9:00">9:00</option>
-								<option value="9:30">9:30</option>
-								<option value="10:00">10:00</option>
-								<option value="10:30">10:30</option>
-								<option value="11:00">11:00</option>
-								<option value="11:30">11:30</option>
-								<option value="12:00">12:00</option>
-								<option value="12:30">12:30</option>
-								<option value="13:00">13:00</option>
-								<option value="13:30">13:30</option>
-								<option value="14:00">14:00</option>
-								<option value="14:30">14:30</option>
-								<option value="15:00">15:00</option>
-								<option value="15:30">15:30</option>
-								<option value="16:00">16:00</option>
-								<option value="16:30">16:30</option>
-								<option value="17:00">17:00</option>
-								<option value="17:30">17:30</option>
-								<option value="18:00">18:00</option>
-								<option value="18:30">18:30</option>
-								<option value="19:00">19:00</option>
-								<option value="19:30">19:30</option>
-								<option value="20:00">20:00</option>
-								<option value="20:30">20:30</option>
-								<option value="21:00">21:00</option>
-								<option value="21:30">21:30</option>
-							</select>
-						</label>
-						<label>到
-							<select name="end-time" size="5">
-								<option value="8:30">8:30</option>
-								<option value="9:00">9:00</option>
-								<option value="9:30">9:30</option>
-								<option value="10:00">10:00</option>
-								<option value="10:30">10:30</option>
-								<option value="11:00">11:00</option>
-								<option value="11:30">11:30</option>
-								<option value="12:00">12:00</option>
-								<option value="12:30">12:30</option>
-								<option value="13:00">13:00</option>
-								<option value="13:30">13:30</option>
-								<option value="14:00">14:00</option>
-								<option value="14:30">14:30</option>
-								<option value="15:00">15:00</option>
-								<option value="15:30">15:30</option>
-								<option value="16:00">16:00</option>
-								<option value="16:30">16:30</option>
-								<option value="17:00">17:00</option>
-								<option value="17:30">17:30</option>
-								<option value="18:00">18:00</option>
-								<option value="18:30">18:30</option>
-								<option value="19:00">19:00</option>
-								<option value="19:30">19:30</option>
-								<option value="20:00">20:00</option>
-								<option value="20:30">20:30</option>
-								<option value="21:00">21:00</option>
-								<option value="21:30">21:30</option>
-								<option value="22:00">22:00</option>
-							</select>
-						</label>
-						<!--
-						從 <input type="time" name="start-time" min="08:00" max="21:30">
-						到 <input type="time" name="end-time" min="08:30" max="22:00">-->
-					</div>
-					<div class="text-center">
-						<label><input type="button" value="確定"></label>
-					</div>
-					
 				</form>
 			</div>
 		</div>
