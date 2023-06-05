@@ -47,7 +47,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //icon -->
 </head>
 
-<body>
+<body onload="CurrentTime()">
 	<!-- header -->
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light py-4">
@@ -138,8 +138,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div id="seats-area">
 						<div id="seats">
 						<label id="seats-list">座位/空間：
-							<select name="seats" size="3">
+							<select id="seat-selected" name="seats" size="1">
+								<!--optgroup label="座位"-->
 								<option class="seat-f1" value="1-03">1-03</option>
+								<option class="seat-f1" value="1-07">1-07</option>
+								<!--/optgroup-->
 								<option class="seat-f2" value="2-24" hidden>2-24</option>
 								<option class="seat-f2" value="2-R3" hidden>2-R3</option>
 								<option class="seat-f3" value="3-20" hidden>3-20</option>
@@ -157,72 +160,72 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div>
 						<label>日期：
-						<input type="date" name="date" min="2023-06-15" max="2023-07-15">
+						<input id="date" type="date" name="date" min="2023-06-15" max="2023-07-15">
 						</label>
 					</div>
 					<div>時間：
 						<label id="time-list">從
-							<select name="start-time" size="5">
-								<option value="8:00">8:00</option>
-								<option value="8:30">8:30</option>
-								<option value="9:00">9:00</option>
-								<option value="9:30">9:30</option>
-								<option value="10:00">10:00</option>
-								<option value="10:30">10:30</option>
-								<option value="11:00">11:00</option>
-								<option value="11:30">11:30</option>
-								<option value="12:00">12:00</option>
-								<option value="12:30">12:30</option>
-								<option value="13:00">13:00</option>
-								<option value="13:30">13:30</option>
-								<option value="14:00">14:00</option>
-								<option value="14:30">14:30</option>
-								<option value="15:00">15:00</option>
-								<option value="15:30">15:30</option>
-								<option value="16:00">16:00</option>
-								<option value="16:30">16:30</option>
-								<option value="17:00">17:00</option>
-								<option value="17:30">17:30</option>
-								<option value="18:00">18:00</option>
-								<option value="18:30">18:30</option>
-								<option value="19:00">19:00</option>
-								<option value="19:30">19:30</option>
-								<option value="20:00">20:00</option>
-								<option value="20:30">20:30</option>
-								<option value="21:00">21:00</option>
-								<option value="21:30">21:30</option>
+							<select name="start-time" size="1">
+								<option class="start-times" value="8:00">8:00</option>
+								<option class="start-times" value="8:30">8:30</option>
+								<option class="start-times" value="9:00">9:00</option>
+								<option class="start-times" value="9:30">9:30</option>
+								<option class="start-times" value="10:00">10:00</option>
+								<option class="start-times" value="10:30">10:30</option>
+								<option class="start-times" value="11:00">11:00</option>
+								<option class="start-times" value="11:30">11:30</option>
+								<option class="start-times" value="12:00">12:00</option>
+								<option class="start-times" value="12:30">12:30</option>
+								<option class="start-times" value="13:00">13:00</option>
+								<option class="start-times" value="13:30">13:30</option>
+								<option class="start-times" value="14:00">14:00</option>
+								<option class="start-times" value="14:30">14:30</option>
+								<option class="start-times" value="15:00">15:00</option>
+								<option class="start-times" value="15:30">15:30</option>
+								<option class="start-times" value="16:00">16:00</option>
+								<option class="start-times" value="16:30">16:30</option>
+								<option class="start-times" value="17:00">17:00</option>
+								<option class="start-times" value="17:30">17:30</option>
+								<option class="start-times" value="18:00">18:00</option>
+								<option class="start-times" value="18:30">18:30</option>
+								<option class="start-times" value="19:00">19:00</option>
+								<option class="start-times" value="19:30">19:30</option>
+								<option class="start-times" value="20:00">20:00</option>
+								<option class="start-times" value="20:30">20:30</option>
+								<option class="start-times" value="21:00">21:00</option>
+								<option class="start-times" value="21:30">21:30</option>
 							</select>
 						</label>
 						<label>到
-							<select name="end-time" size="5">
-								<option value="8:30">8:30</option>
-								<option value="9:00">9:00</option>
-								<option value="9:30">9:30</option>
-								<option value="10:00">10:00</option>
-								<option value="10:30">10:30</option>
-								<option value="11:00">11:00</option>
-								<option value="11:30">11:30</option>
-								<option value="12:00">12:00</option>
-								<option value="12:30">12:30</option>
-								<option value="13:00">13:00</option>
-								<option value="13:30">13:30</option>
-								<option value="14:00">14:00</option>
-								<option value="14:30">14:30</option>
-								<option value="15:00">15:00</option>
-								<option value="15:30">15:30</option>
-								<option value="16:00">16:00</option>
-								<option value="16:30">16:30</option>
-								<option value="17:00">17:00</option>
-								<option value="17:30">17:30</option>
-								<option value="18:00">18:00</option>
-								<option value="18:30">18:30</option>
-								<option value="19:00">19:00</option>
-								<option value="19:30">19:30</option>
-								<option value="20:00">20:00</option>
-								<option value="20:30">20:30</option>
-								<option value="21:00">21:00</option>
-								<option value="21:30">21:30</option>
-								<option value="22:00">22:00</option>
+							<select name="end-time" size="1">
+								<option class="end-times" value="8:30">8:30</option>
+								<option class="end-times" value="9:00">9:00</option>
+								<option class="end-times" value="9:30">9:30</option>
+								<option class="end-times" value="10:00">10:00</option>
+								<option class="end-times" value="10:30">10:30</option>
+								<option class="end-times" value="11:00">11:00</option>
+								<option class="end-times" value="11:30">11:30</option>
+								<option class="end-times" value="12:00">12:00</option>
+								<option class="end-times" value="12:30">12:30</option>
+								<option class="end-times" value="13:00">13:00</option>
+								<option class="end-times" value="13:30">13:30</option>
+								<option class="end-times" value="14:00">14:00</option>
+								<option class="end-times" value="14:30">14:30</option>
+								<option class="end-times" value="15:00">15:00</option>
+								<option class="end-times" value="15:30">15:30</option>
+								<option class="end-times" value="16:00">16:00</option>
+								<option class="end-times" value="16:30">16:30</option>
+								<option class="end-times" value="17:00">17:00</option>
+								<option class="end-times" value="17:30">17:30</option>
+								<option class="end-times" value="18:00">18:00</option>
+								<option class="end-times" value="18:30">18:30</option>
+								<option class="end-times" value="19:00">19:00</option>
+								<option class="end-times" value="19:30">19:30</option>
+								<option class="end-times" value="20:00">20:00</option>
+								<option class="end-times" value="20:30">20:30</option>
+								<option class="end-times" value="21:00">21:00</option>
+								<option class="end-times" value="21:30">21:30</option>
+								<option class="end-times" value="22:00">22:00</option>
 							</select>
 						</label>
 						<!--
