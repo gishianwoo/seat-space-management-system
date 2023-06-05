@@ -391,12 +391,12 @@ form h2{
 input[type=date],input[type=time],select{
     border-radius: 3px;
 }/**/
-#time-list{
-    /*padding-bottom: 50px;*/
-}
-select[name="start-time"],select[name="end-time"]{
-    /*margin-bottom: -50px;*/
-}
+/*#time-list{
+    padding-bottom: 50px;
+}*/
+/*select[name="start-time"],select[name="end-time"]{
+    margin-bottom: -50px;
+}*/
 /*按鈕*/
 input[type=button]{
     border-radius: 3px;
@@ -408,13 +408,13 @@ input[type=button]{
     display: flex;
     /*border: 1px solid red;*/
 }
-#seats-list{
-    /*padding-bottom: 30px;
-    border: 1px solid green;*/
-}
+/*#seats-list{
+    padding-bottom: 30px;
+    border: 1px solid green;
+}*//*
 select[name="seats"]{
-    /*margin-bottom: -30px;*/
-}
+    margin-bottom: -30px;
+}*/
 option{background-color: #788a7e;}
 option[value="1-03"]{
     background-color: #e2d27d;
