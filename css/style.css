@@ -361,7 +361,7 @@ a.sb {
 
 
 /*-- 預約 --*/
-div#area{background: #d4cbbb;}
+.area{background: #d4cbbb;}
 .area #h2{
     margin: 0 auto;
     padding: 40px;
