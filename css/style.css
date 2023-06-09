@@ -279,6 +279,7 @@ footer {
 .notice h2{
     font-weight: bold;
     color: #E0AAA1;
+    padding-bottom: 18px;
 }
 .notice ol{
     color:#ffffff;
