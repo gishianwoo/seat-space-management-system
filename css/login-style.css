@@ -219,7 +219,8 @@ img {
 /*end reset*/
 
 body {
-    background: url(../images/4.jpg) no-repeat;
+    background-color: rgb(201,192,173)
+    <!--background: url(../images/4.jpg) no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -229,7 +230,7 @@ body {
 	background-attachment: fixed;
     font-size: 100%;
     font-family: 'Encode Sans Condensed', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden;-->
 }
 
 /*-- title --*/
