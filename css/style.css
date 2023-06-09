@@ -372,7 +372,7 @@ a.sb {
     justify-content: space-around; /*水平置中，前、後、間隔都有留空白*/
     align-items: center; /*垂直置中*/
     padding: 60px 60px;
-    border: 1px solid blue;/**/
+    /*border: 1px solid blue;*/
 }
 /*平面圖*/
 #floor-plan{
