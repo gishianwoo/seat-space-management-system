@@ -264,7 +264,7 @@ footer {
 
 /*--注意事項--*/
 .notice{background: #d4cbbb;}
-.notice{
+.notice ol{
     color:#ffffff;
     display: block; 
     background-color: #563924;
