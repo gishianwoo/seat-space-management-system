@@ -263,6 +263,10 @@ footer {
 /*-- //footer --*/
 
 /*--注意事項--*/
+.notice h2{
+    font-weight: bold;
+    color: #E0AAA1;
+}
 .notice ol{
     color:#ffffff;
     display: block; 
@@ -272,9 +276,9 @@ footer {
     max-width: 960px; 
     min-width: 500px; 
     position: relative;
-    padding: 12px 12px 12px 24px; 
+    padding: 12px 6px 12px 36px; 
     margin: 10px auto 20px auto;
-    border:8px solid white;
+    border:2px solid white;
     border-radius: 8px;
 }
 /*--注意事項--*/
