@@ -262,7 +262,16 @@ footer {
 }
 /*-- //footer --*/
 
-
+/*--注意事項--*/
+.notice{
+    background:#563924;
+    padding:10px; 
+    width:300px; 
+    height:50px;
+    border: 5px solid #563924;
+    border-radius: 5px;
+}
+/*--注意事項--*/
 
 /*-- gallery --*/
 div#gallery {
