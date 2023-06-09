@@ -263,7 +263,6 @@ footer {
 /*-- //footer --*/
 
 /*--注意事項--*/
-.notice{background: #d4cbbb;}
 .notice ol{
     color:#ffffff;
     display: block; 
@@ -273,7 +272,7 @@ footer {
     max-width: 960px; 
     min-width: 500px; 
     position: relative;
-    padding: 12px; 
+    padding: 12px 12px 12px 24px; 
     margin: 10px auto 20px auto;
     border:8px solid white;
     border-radius: 8px;
