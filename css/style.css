@@ -263,12 +263,7 @@ footer {
 /*-- //footer --*/
 
 /*--注意事項--*/
-.notice h2{
-    font-weight: bold;
-    color: #E0AAA1;
-}
-.notice ol{
-    color:#ffffff;
+.notice {
     display: block; 
     background-color: #563924;
     height: fit-content; 
@@ -280,6 +275,13 @@ footer {
     margin: 10px auto 20px auto;
     border:2px solid white;
     border-radius: 8px;
+}
+.notice h2{
+    font-weight: bold;
+    color: #E0AAA1;
+}
+.notice ol{
+    color:#ffffff;
 }
 /*--注意事項--*/
 
