@@ -149,20 +149,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div id="seats-area">
 						<div id="seats">
-						<label id="seats-list">座位/空間：
-							<select id="seat-selected" name="seats" size="1">
-								<!--optgroup label="座位"-->
-								<option class="seat-f1" value="1-03">1-03</option>
-								<option class="seat-f1" value="1-07">1-07</option>
-								<!--/optgroup-->
-								<option class="seat-f2" value="2-24" hidden>2-24</option>
-								<option class="seat-f2" value="2-R3" hidden>2-R3</option>
-								<option class="seat-f3" value="3-20" hidden>3-20</option>
-								<option class="seat-f4" value="4-14" hidden>4-14</option>
-								<option class="seat-f4" value="4-R5" hidden>4-R5</option>
-								<option class="seat-f5" value="5-01" hidden>5-01</option>
-							</select>
-						</label>
+							<label id="seats-list">座位/空間：
+								<select id="seat-selected" name="seats" size="1">
+									<!--optgroup label="座位"-->
+									<option class="seat-f1" value="1-03">1-03</option>
+									<option class="seat-f1" value="1-07">1-07</option>
+									<!--/optgroup-->
+									<option class="seat-f2" value="2-24" hidden>2-24</option>
+									<option class="seat-f2" value="2-R3" hidden>2-R3</option>
+									<option class="seat-f3" value="3-20" hidden>3-20</option>
+									<option class="seat-f4" value="4-14" hidden>4-14</option>
+									<option class="seat-f4" value="4-R5" hidden>4-R5</option>
+									<option class="seat-f5" value="5-01" hidden>5-01</option>
+								</select>
+							</label>
 						</div>
 						<div id="direction"><div>
 							顏色為座位目前狀態<br>
@@ -172,12 +172,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div>
 						<label>日期：
-						<input id="date" type="date" name="date" min="2023-06-15" max="2023-07-15">
+						<input id="date" type="date" name="date" min="2023-06-15" max="2023-07-15" required>
 						</label>
 					</div>
 					<div>時間：
-						<label id="time-list">從
-							<select name="start-time" size="1">
+						<label>從
+							<select name="start-time" size="1" required>
 								<option class="start-times" value="8:00">8:00</option>
 								<option class="start-times" value="8:30">8:30</option>
 								<option class="start-times" value="9:00">9:00</option>
@@ -209,7 +209,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</select>
 						</label>
 						<label>到
-							<select name="end-time" size="1">
+							<select name="end-time" size="1" required>
 								<option class="end-times" value="8:30">8:30</option>
 								<option class="end-times" value="9:00">9:00</option>
 								<option class="end-times" value="9:30">9:30</option>
@@ -245,7 +245,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						到 <input type="time" name="end-time" min="08:30" max="22:00">-->
 					</div>
 					<div class="text-center">
-						<label><input type="button" value="確定"></label>
+						<label><input type="checkbox" name="read-notice" value="read" required>已詳閱預約須知</label>
+					</div>
+					<div class="text-center">
+						
+						<label><input type="submit" value="送出"></label>
 					</div>
 					
 				</form>
