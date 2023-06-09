@@ -220,24 +220,13 @@ img {
 
 body {
     background-color: #C9C0AD;
-    <!--background: url(../images/4.jpg) no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-position: center;
-	background-attachment: fixed;
-    font-size: 100%;
-    font-family: 'Encode Sans Condensed', sans-serif;
-    overflow-x: hidden;-->
 }
 
 /*-- title --*/
 
 h1 {
     font-size: 3.5em;
-    color: #f76b53;
+    color: #1F1211;
     letter-spacing: 2px;
     text-align: center;
     text-shadow: 1px 2px 1px rgba(68, 68, 68, 0.37);
@@ -330,7 +319,7 @@ h1 span {
 .sub-main-w3 input[type="button"]
 {
     color: #fff;
-    background: #f76b53;
+    background: #1F1211;
     border: none;
     padding: 14px 0;
     margin-top: 30px;
