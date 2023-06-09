@@ -264,12 +264,17 @@ footer {
 
 /*--注意事項--*/
 .notice{
-    background:#563924;
-    padding:10px; 
-    width:300px; 
-    height:50px;
-    border: 5px solid #563924;
-    border-radius: 5px;
+    display: block; /*設定為區塊元素*/
+    background-color: #563924;
+    height: fit-content; /*容器高度依照內容長度而定*/
+    width: 70%;
+    max-width: 960px; /*最大寬度設為960px，才不會放太大出現很多空白的地方*/
+    min-width: 500px; /*最小寬度設為500px，避免內容被擠壓影響美觀*/
+    position: relative;
+    padding: 20px; /*設定padding讓文字不要跟邊框連在一起*/
+    top: 50px; /*距離視窗上面100px，避免被導覽列擋住*/
+    border:8px solid white;
+    border-radius: 8px;
 }
 /*--注意事項--*/
 
