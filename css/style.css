@@ -263,8 +263,9 @@ footer {
 /*-- //footer --*/
 
 /*--注意事項--*/
+.notice{background: #d4cbbb;}
 .notice{
-    color:#ffffff
+    font-color:#ffffff
     display: block; /*設定為區塊元素*/
     background-color: #563924;
     height: fit-content; /*容器高度依照內容長度而定*/
@@ -272,7 +273,7 @@ footer {
     max-width: 960px; /*最大寬度設為960px，才不會放太大出現很多空白的地方*/
     min-width: 500px; /*最小寬度設為500px，避免內容被擠壓影響美觀*/
     position: relative;
-    padding: 50px; /*設定padding讓文字不要跟邊框連在一起*/
+    padding: 12px; /*設定padding讓文字不要跟邊框連在一起*/
     margin: 10px auto 20px auto;
     border:8px solid white;
     border-radius: 8px;
@@ -285,11 +286,11 @@ div#gallery {
 }
 
 .gallery_grids {
-    margin-top: 3.2em;
+    margin-top: 2em;
 }
 
 .gallery_grid1 {
-    margin-top: 7em;
+    margin-top: 5em;
 }
 
 .column .gallery_effect {
