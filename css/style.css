@@ -276,9 +276,6 @@ footer {
     border:4px solid white;
     border-radius: 8px;
 }
-#need-to-know{
-    /*margin-top:20px;*/
-}
 .notice h2{
     font-weight: bold;
     color: #FFFFFF;
@@ -363,8 +360,15 @@ a.sb {
 /*-- 預約 --*/
 .area{
     background: #d4cbbb;
-    padding: 60px 0 0 0;
+    padding: 30px 0 0 0;
     /*border: 1px solid blue;*/
+}
+.area h1{
+    width: 80%;
+    font-weight: bold;
+    padding: 15px 0 35px;
+    /*border: 1px solid #2a1715;*//**/
+    margin: 0 auto;
 }
 #reserve{
     display: flex;
@@ -416,32 +420,77 @@ input[type=button]{
     border-radius: 3px;
     font-size: 0.85em;
 }
-/*座位狀態*/
+/*座位選擇的大框框*/
 #seats-area{
     display: flex;
     /*border: 1px solid red;*/
 }
-/*#seats-list{
-    padding-bottom: 30px;
-    border: 1px solid green;
-}*//*
-select[name="seats"]{
-    margin-bottom: -30px;
-}*/
-option{background-color: #788a7e;}
-option[value="1-03"]{
-    background-color: #e2d27d;
+/*空位/可預約*/
+option{
+    color: #788a7e;
+    font-weight: bold;
 }
-option[value="4-14"]{
-    background-color: #cd9d93;
+/*---使用中---*/
+option[value="1-03"],option[value="1-07"],option[value="1-09"],
+option[value="1-11"],option[value="1-15"],option[value="1-23"],
+option[value="1-26"]{
+    color: #e2d27d;
 }
+option[value="2-05"],option[value="2-16"],option[value="2-20"],
+option[value="2-21"],option[value="2-23"],option[value="2-29"],
+option[value="2-54"]{
+    color: #e2d27d;
+}
+option[value="3-03"],option[value="3-07"],option[value="3-15"],
+option[value="3-18"],option[value="3-23"],option[value="3-30"],
+option[value="3-33"],option[value="3-37"],option[value="3-38"],
+option[value="3-40"],option[value="3-44"],option[value="3-47"],
+option[value="303"]{
+    color: #e2d27d;
+}
+option[value="4-05"],option[value="4-16"],option[value="4-20"],
+option[value="4-21"],option[value="4-23"],option[value="4-29"],
+option[value="4-63"],option[value="4-64"],option[value="4-66"]{
+    color: #e2d27d;
+}
+option[value="5-05"],option[value="5-12"],option[value="5-13"],
+option[value="5-16"],option[value="5-17"],option[value="5-28"],
+option[value="5-32"]{
+    color: #e2d27d;
+}
+/*---已預約---*/
+option[value="1-02"],option[value="1-05"],option[value="1-12"],
+option[value="1-14"],option[value="1-17"],option[value="1-19"],
+option[value="1-21"]{
+    color: #cd9d93;
+}
+option[value="2-01"],option[value="2-12"],option[value="2-28"],
+option[value="2-32"],option[value="2-33"],option[value="2-48"],
+option[value="2-50"],option[value="2-56"]{
+    color: #cd9d93;
+}
+option[value="3-11"],option[value="3-12"],option[value="3-19"],
+option[value="3-27"],option[value="3-29"],option[value="3-49"],
+option[value="305"]{
+    color: #cd9d93;
+}
+option[value="4-01"],option[value="4-12"],option[value="4-37"],
+option[value="4-38"],option[value="4-53"],option[value="4-55"]{
+    color: #cd9d93;
+}
+option[value="5-09"],option[value="5-24"],option[value="5-25"],
+option[value="5-29"]{
+    color: #cd9d93;
+}
+
 /*座位狀態說明*/
 #direction{
     font-size: 0.7em;
     letter-spacing: 1.5px;
-    margin-left: 20px;
+    margin-left: 40px;
     display: flex;
     align-items: center;
+    /*border: 1px solid red;*/
 }
 /**/
 /*-- //預約 --*/
@@ -485,6 +534,7 @@ option[value="4-14"]{
 #reservation-record td{
     border-right: 2px solid #2a1715;
 }
+
 /*-- //個人紀錄 --*/
 
 
