@@ -131,17 +131,18 @@ function calculate(year,mon,date){
 
 var StartTimes = document.getElementsByClassName("start-times");
 var EndTimes = document.getElementsByClassName("end-times");
-var times = [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5,14, 14.5, 15, 15.5, 
+var times = [8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 
             16, 16.5, 17, 17.5, 18, 18.5, 19, 19.5, 20, 20.5, 21, 21.5, 22]
-document.getElementById("seat-selected").onchange = function() {
+
+
+document.getElementById("seat-selected").onchange = function selected() {
     //alert(this.value);//9:22
     var NowTime = new Date();
     var h = NowTime.getHours();
     var m = NowTime.getMinutes();
-    var s = NowTime.getSeconds();
     var use;
     t = h + m/60;
-    ResetSelected()
+    ResetTimeSelected()
     /*for (let j=0; j<StartTimes.length; j++){
             StartTimes[j].removeAttribute("selected");
             EndTimes[j].removeAttribute("selected");
@@ -161,14 +162,44 @@ document.getElementById("seat-selected").onchange = function() {
         }
     }*/
     //查看時狀態為使用中
-    if ((this.value)=="1-03"){
-        StartTimes[use].setAttribute("hidden","true");
-        EndTimes[use].setAttribute("hidden","true");
-        StartTimes[use+1].setAttribute("selected","true");
-        EndTimes[use+1].setAttribute("selected","true");
+    if ( 
+    ((this.value)=="1-03")||((this.value)=="1-07")||((this.value)=="1-09")||
+    ((this.value)=="1-11")||((this.value)=="1-15")||((this.value)=="1-23")||
+    ((this.value)=="1-26")||
+    ((this.value)=="2-05")||((this.value)=="2-16")||((this.value)=="2-20")||
+    ((this.value)=="2-21")||((this.value)=="2-23")||((this.value)=="2-29")||
+    ((this.value)=="2-54")||
+    ((this.value)=="3-03")||((this.value)=="3-07")||((this.value)=="3-15")||
+    ((this.value)=="3-18")||((this.value)=="3-23")||((this.value)=="3-30")||
+    ((this.value)=="3-33")||((this.value)=="3-37")||((this.value)=="3-38")||
+    ((this.value)=="3-40")||((this.value)=="3-44")||((this.value)=="3-47")||
+    ((this.value)=="303")||
+    ((this.value)=="4-05")||((this.value)=="4-16")||((this.value)=="4-20")||
+    ((this.value)=="4-21")||((this.value)=="4-23")||((this.value)=="4-29")||
+    ((this.value)=="4-63")||((this.value)=="4-64")||((this.value)=="4-66")||
+    ((this.value)=="5-05")||((this.value)=="5-12")||((this.value)=="5-13")||
+    ((this.value)=="5-16")||((this.value)=="5-17")||((this.value)=="5-28")||
+    ((this.value)=="5-32") ){
+        StartTimes[use+1].setAttribute("hidden","true");
+        EndTimes[use+1].setAttribute("hidden","true");
+        StartTimes[use+2].setAttribute("selected","true");
+        EndTimes[use+2].setAttribute("selected","true");
     }
     //查看時狀態為預約
-    else if ((this.value)=="4-14"){
+    else if ( 
+    ((this.value)=="1-02")||((this.value)=="1-05")||((this.value)=="1-12")||
+    ((this.value)=="1-14")||((this.value)=="1-17")||((this.value)=="1-19")||
+    ((this.value)=="1-21")||
+    ((this.value)=="2-01")||((this.value)=="2-12")||((this.value)=="2-28")||
+    ((this.value)=="2-32")||((this.value)=="2-33")||((this.value)=="2-48")||
+    ((this.value)=="2-50")||((this.value)=="2-56")||
+    ((this.value)=="3-11")||((this.value)=="3-12")||((this.value)=="3-19")||
+    ((this.value)=="3-27")||((this.value)=="3-29")||((this.value)=="3-49")||
+    ((this.value)=="305")||
+    ((this.value)=="4-01")||((this.value)=="4-12")||((this.value)=="4-37")||
+    ((this.value)=="4-38")||((this.value)=="4-53")||((this.value)=="4-55")||
+    ((this.value)=="5-09")||((this.value)=="5-24")||((this.value)=="5-25")||
+    ((this.value)=="5-29") ){
         for(let j=use; j<(use+3); j++){
             StartTimes[j].setAttribute("hidden","true");
             EndTimes[j].setAttribute("hidden","true");
@@ -176,13 +207,14 @@ document.getElementById("seat-selected").onchange = function() {
         StartTimes[use+3].setAttribute("selected","true");
         EndTimes[use+3].setAttribute("selected","true");
     }
+    //查看時狀態為：空位/可預約
     else{
         StartTimes[use].setAttribute("selected","true");
         EndTimes[use].setAttribute("selected","true");
     }
 }
 
-function ResetSelected(){
+function ResetTimeSelected(){
     for (let j=0; j<StartTimes.length; j++){
         StartTimes[j].removeAttribute("selected");
         EndTimes[j].removeAttribute("selected");
@@ -193,12 +225,11 @@ function Reservation_Start(t,use){
         /**/
         if (times[i] <= t){
             StartTimes[i].setAttribute("hidden","true");
-            //StartTimes[i+1].setAttribute("selected","true");
             EndTimes[i].setAttribute("hidden","true");
-            //EndTimes[i+1].setAttribute("selected","true");
+            use = i;
         }
         else{
-            use = i;
+            
             break
         }
     }
