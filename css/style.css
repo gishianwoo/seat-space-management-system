@@ -426,7 +426,8 @@ input[type=button]{
     /*border: 1px solid red;*/
 }
 /*空位/可預約*/
-option{
+option[class="seat-f1"],option[class="seat-f2"],option[class="seat-f3"],
+option[class="seat-f4"],option[class="seat-f5"]{
     color: #788a7e;
     font-weight: bold;
 }
